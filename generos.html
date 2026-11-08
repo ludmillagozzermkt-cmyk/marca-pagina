@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="As Alas da Biblioteca: conheça os dez gêneros do acervo do Marca-Página e os livros que esperam em cada estante.">
+  <title>Gêneros | Marca-Página</title>
+  <link rel="icon" href="img/ui/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ===== HEADER (idêntico em todas as páginas; só muda a classe "ativo") ===== -->
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html"><img src="img/ui/marca-pagina.svg" alt="" width="20" height="28">Marca-Página</a>
+      <button class="menu-botao" type="button" aria-expanded="false" aria-controls="nav-principal" aria-label="Abrir menu"><span></span></button>
+      <nav class="nav-principal" id="nav-principal" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="generos.html" class="ativo" aria-current="page">Gêneros</a></li>
+          <li><a href="livros.html">Livros</a></li>
+          <li><a href="clube.html">Clube do Leitor</a></li>
+          <li><a href="contatos.html">Contatos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ===== TOPO DA PÁGINA ===== -->
+    <section class="topo-pagina">
+      <div class="container">
+        <div class="ornamento" aria-hidden="true">❦</div>
+        <span class="sobretitulo">O mapa da biblioteca</span>
+        <h1>As Alas da Biblioteca</h1>
+        <p>Cada gênero é uma ala do acervo. Escolha um corredor e deixe-se perder.</p>
+      </div>
+    </section>
+
+    <!-- ===== INTRODUÇÃO + GRID DE GÊNEROS ===== -->
+    <section class="secao" aria-label="Os dez gêneros do acervo">
+      <div class="container">
+        <p class="intro-texto capitular">Toda biblioteca antiga tem seus corredores, e cada corredor guarda um tipo de silêncio. Aqui não é diferente: dividimos o acervo em dez alas, uma para cada gênero. Leia a descrição, veja os quatro títulos que esperam na estante e, quando sentir vontade, siga para lá.</p>
+
+        <div class="alas">
+
+          <!-- Ala I -->
+          <article class="card ala-card">
+            <div class="ala-card__topo">
+              <span class="medalhao" aria-hidden="true">I</span>
+              <div>
+                <span class="sobretitulo">Ala I</span>
+                <h2>Romance</h2>
+              </div>
+            </div>
+            <p>Histórias sobre encontros, desencontros e o coração em todas as idades. Para quem gosta de torcer por um casal e se emocionar pelo caminho.</p>
+            <hr>
+            <span class="sobretitulo">Na estante</span>
+            <ul>
+              <li><strong>É Assim que Acaba</strong> — Colleen Hoover</li>
+              <li><strong>A Hipótese do Amor</strong> — Ali Hazelwood</li>
+              <li><strong>Como Eu Era Antes de Você</strong> — Jojo Moyes</li>
+              <li><strong>Orgulho e Preconceito</strong> — Jane Austen</li>
+            </ul>
+            <a class="btn btn--pequeno" href="livros.html#romance">Visitar a estante</a>
+          </article>
+
+          <!-- Ala II -->
+          <article class="card ala-card">
+            <div class="ala-card__topo">
+              <span class="medalhao" aria-hidden="true">II</span>
+              <div>
+                <span class="sobretitulo">Ala II</span>
+                <h2>Fantasia</h2>
+              </div>
+            </div>
+            <p>Mundos inventados, magia e jornadas que começam numa porta qualquer. Ideal para quem quer fugir do cotidiano por algumas centenas de páginas.</p>
+            <hr>
+            <span class="sobretitulo">Na estante</span>
+            <ul>
+              <li><strong>Eragon</strong> — Christopher Paolini</li>
+              <li><strong>Harry Potter e a Pedra Filosofal</strong> — J. K. Rowling</li>
+              <li><strong>A Rainha Vermelha</strong> — Victoria Aveyard</li>
+              <li><strong>O Nome do Vento</strong> — Patrick Rothfuss</li>
+            </ul>
+            <a class="btn btn--pequeno" href="livros.html#fantasia">Visitar a estante</a>
+          </article>
+
+          <!-- Ala III -->
+          <article class="card ala-card">
+            <div class="ala-card__topo">
+              <span class="medalhao" aria-hidden="true">III</span>
+              <div>
+                <span class="sobretitulo">Ala III</span>
+                <h2>Suspense e Mistério</h2>
+              </div>
+            </div>
+            <p>Pistas, segredos e reviravoltas que prendem até a última linha. Para leitores que gostam de desconfiar de todo mundo, inclusive do narrador.</p>
+            <hr>
+            <span class="sobretitulo">Na estante</span>
+            <ul>
+              <li><strong>A Paciente Silenciosa</strong> — Alex Michaelides</li>
+              <li><strong>Verity</strong> — Colleen Hoover</li>
+              <li><strong>E Não Sobrou Nenhum</strong> — Agatha Christie</li>
+              <li><strong>O Homem de Giz</strong> — C. J. Tudor</li>
+            </ul>
+            <a class="btn btn--pequeno" href="livros.html#suspense">Visitar a estante</a>
+          </article>
+
+          <!-- Ala IV -->
+          <article class="card ala-card">
+            <div class="ala-card__topo">
+              <span class="medalhao" aria-hidden="true">IV</span>
+              <div>
+                <span class="sobretitulo">Ala IV</span>
+                <h2>Terror</h2>
+              </div>
+            </div>
+            <p>O medo como companhia, em casas assombradas, cidades pequenas e mentes inquietas. Para quem lê com a luz acesa, e gosta disso.</p>
+            <hr>
+            <span class="sobretitulo">Na estante</span>
+            <ul>
+              <li><strong>It: A Coisa</strong> — Stephen King</li>
+              <li><strong>O Iluminado</strong> — Stephen King</li>
+              <li><strong>A Assombração da Casa da Colina</strong> — Shirley Jackson</li>
+              <li><strong>O Exorcista</strong> — William Peter Blatty</li>
+            </ul>
+            <a class="btn btn--pequeno" href="livros.html#terror">Visitar a estante</a>
+          </article>
+
+          <!-- Ala V -->
+          <article class="card ala-card">
+            <div class="ala-card__topo">
+              <span class="medalhao" aria-hidden="true">V</span>
+              <div>
+                <span class="sobretitulo">Ala V</span>
+                <h2>Drama</h2>
+              </div>
+            </div>
+            <p>Vidas comuns diante de grandes perguntas: perda, amizade, coragem. Livros para ler devagar e guardar por muito tempo.</p>
+            <hr>
+            <span class="sobretitulo">Na estante</span>
+            <ul>
+              <li><strong>A Menina que Roubava Livros</strong> — Markus Zusak</li>
+              <li><strong>Extraordinário</strong> — R. J. Palacio</li>
+              <li><strong>A Culpa é das Estrelas</strong> — John Green</li>
+              <li><strong>O Pequeno Príncipe</strong> — Antoine de Saint-Exupéry</li>
+            </ul>
+            <a class="btn btn--pequeno" href="livros.html#drama">Visitar a estante</a>
+          </article>
+
+          <!-- Ala VI -->
+          <article class="card ala-card">
+            <div class="ala-card__topo">
+              <span class="medalhao" aria-hidden="true">VI</span>
+              <div>
+                <span class="sobretitulo">Ala VI</span>
+                <h2>Ficção Científica e Distopia</h2>
+              </div>
+            </div>
+            <p>Futuros possíveis que dizem muito sobre o presente. Para quem gosta de pensar enquanto vira as páginas, e de desconfiar de governos perfeitos demais.</p>
+            <hr>
+            <span class="sobretitulo">Na estante</span>
+            <ul>
+              <li><strong>Jogos Vorazes</strong> — Suzanne Collins</li>
+              <li><strong>1984</strong> — George Orwell</li>
+              <li><strong>Fahrenheit 451</strong> — Ray Bradbury</li>
+              <li><strong>Divergente</strong> — Veronica Roth</li>
+            </ul>
+            <a class="btn btn--pequeno" href="livros.html#ficcao-cientifica">Visitar a estante</a>
+          </article>
+
+          <!-- Ala VII -->
+          <article class="card ala-card">
+            <div class="ala-card__topo">
+              <span class="medalhao" aria-hidden="true">VII</span>
+              <div>
+                <span class="sobretitulo">Ala VII</span>
+                <h2>Romance de Fantasia</h2>
+              </div>
+            </div>
+            <p>O encontro entre a magia da fantasia e a intensidade do romance, a chamada romantasia. Para quem quer dragões, cortes e paixões na mesma história.</p>
+            <hr>
+            <span class="sobretitulo">Na estante</span>
+            <ul>
+              <li><strong>Quarta Asa</strong> — Rebecca Yarros</li>
+              <li><strong>Corte de Espinhos e Rosas</strong> — Sarah J. Maas</li>
+              <li><strong>O Príncipe Cruel</strong> — Holly Black</li>
+              <li><strong>A Serpente e as Asas Feitas de Noite</strong> — Carissa Broadbent</li>
+            </ul>
+            <a class="btn btn--pequeno" href="livros.html#romantasia">Visitar a estante</a>
+          </article>
+
+          <!-- Ala VIII -->
+          <article class="card ala-card">
+            <div class="ala-card__topo">
+              <span class="medalhao" aria-hidden="true">VIII</span>
+              <div>
+                <span class="sobretitulo">Ala VIII</span>
+                <h2>Literatura Clássica</h2>
+              </div>
+            </div>
+            <p>Obras que atravessaram séculos e continuam falando com a gente. Uma ala para conhecer as raízes da literatura, sem medo e sem pressa.</p>
+            <hr>
+            <span class="sobretitulo">Na estante</span>
+            <ul>
+              <li><strong>Dom Casmurro</strong> — Machado de Assis</li>
+              <li><strong>O Morro dos Ventos Uivantes</strong> — Emily Brontë</li>
+              <li><strong>Frankenstein</strong> — Mary Shelley</li>
+              <li><strong>Jane Eyre</strong> — Charlotte Brontë</li>
+            </ul>
+            <a class="btn btn--pequeno" href="livros.html#classicos">Visitar a estante</a>
+          </article>
+
+          <!-- Ala IX -->
+          <article class="card ala-card">
+            <div class="ala-card__topo">
+              <span class="medalhao" aria-hidden="true">IX</span>
+              <div>
+                <span class="sobretitulo">Ala IX</span>
+                <h2>Aventura</h2>
+              </div>
+            </div>
+            <p>Ilhas, mapas, tesouros e viagens sem volta garantida. Para leitores de todas as idades com vontade de partir.</p>
+            <hr>
+            <span class="sobretitulo">Na estante</span>
+            <ul>
+              <li><strong>A Ilha do Tesouro</strong> — Robert Louis Stevenson</li>
+              <li><strong>As Crônicas de Nárnia: O Leão, a Feiticeira e o Guarda-Roupa</strong> — C. S. Lewis</li>
+              <li><strong>O Hobbit</strong> — J. R. R. Tolkien</li>
+              <li><strong>Robinson Crusoé</strong> — Daniel Defoe</li>
+            </ul>
+            <a class="btn btn--pequeno" href="livros.html#aventura">Visitar a estante</a>
+          </article>
+
+          <!-- Ala X -->
+          <article class="card ala-card">
+            <div class="ala-card__topo">
+              <span class="medalhao" aria-hidden="true">X</span>
+              <div>
+                <span class="sobretitulo">Ala X</span>
+                <h2>Literatura Brasileira</h2>
+              </div>
+            </div>
+            <p>Vozes do nosso país, do sertão às cidades, em histórias que ajudam a entender quem somos. Uma ala para ler o Brasil.</p>
+            <hr>
+            <span class="sobretitulo">Na estante</span>
+            <ul>
+              <li><strong>Torto Arado</strong> — Itamar Vieira Junior</li>
+              <li><strong>A Hora da Estrela</strong> — Clarice Lispector</li>
+              <li><strong>Capitães da Areia</strong> — Jorge Amado</li>
+              <li><strong>O Cortiço</strong> — Aluísio Azevedo</li>
+            </ul>
+            <a class="btn btn--pequeno" href="livros.html#brasileira">Visitar a estante</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER (idêntico em todas as páginas) ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-colunas">
+        <div class="footer-marca">
+          <a class="logo" href="index.html"><img src="img/ui/marca-pagina.svg" alt="" width="20" height="28">Marca-Página</a>
+          <p>Uma biblioteca antiga para leitores do mundo novo. O lugar onde você para, e sempre volta.</p>
+        </div>
+        <nav class="footer-links" aria-label="Links rápidos">
+          <h2>Navegue</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="generos.html">Gêneros</a></li>
+            <li><a href="livros.html">Livros</a></li>
+            <li><a href="clube.html">Clube do Leitor</a></li>
+            <li><a href="contatos.html">Contatos</a></li>
+          </ul>
+        </nav>
+        <div class="footer-clube">
+          <h2>Próximo encontro</h2>
+          <p>Sábado, 12 de dezembro de 2026, às 19h: <a href="clube.html">A Menina que Roubava Livros</a>.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-base">
+      <div class="container">
+        <p>© 2026 Marca-Página — Projeto acadêmico</p>
+        <p class="footer-academico">Universidade Vila Velha · Análise e Desenvolvimento de Sistemas<br>Ludmilla Gozzer dos Santos e Danillo Martins Peruch</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

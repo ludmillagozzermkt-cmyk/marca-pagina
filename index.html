@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Marca-Página: um porto seguro para leitores virtuais. Acervo organizado por gênero, resenhas honestas e o Clube do Leitor.">
+  <title>Home | Marca-Página</title>
+  <link rel="icon" href="img/ui/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ===== HEADER (idêntico em todas as páginas; só muda a classe "ativo") ===== -->
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html"><img src="img/ui/marca-pagina.svg" alt="" width="20" height="28">Marca-Página</a>
+      <button class="menu-botao" type="button" aria-expanded="false" aria-controls="nav-principal" aria-label="Abrir menu"><span></span></button>
+      <nav class="nav-principal" id="nav-principal" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html" class="ativo" aria-current="page">Home</a></li>
+          <li><a href="generos.html">Gêneros</a></li>
+          <li><a href="livros.html">Livros</a></li>
+          <li><a href="clube.html">Clube do Leitor</a></li>
+          <li><a href="contatos.html">Contatos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" aria-labelledby="titulo-hero">
+      <div class="hero__conteudo">
+        <div class="ornamento" aria-hidden="true">❦</div>
+        <span class="sobretitulo">Uma biblioteca antiga, agora online</span>
+        <h1 id="titulo-hero">Marca-Página</h1>
+        <p class="hero__subtitulo">Um porto seguro para leitores virtuais</p>
+        <p class="hero__boasvindas">Bem-vindo, leitor. Puxe uma cadeira: as estantes estão à sua espera.</p>
+        <div class="hero__botoes">
+          <a class="btn" href="livros.html">Explorar o acervo</a>
+          <a class="btn btn--claro" href="clube.html">Conhecer o Clube</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE O BLOG (texto explicativo da funcionalidade) ===== -->
+    <section class="secao" aria-labelledby="titulo-sobre">
+      <div class="container sobre">
+        <div>
+          <span class="sobretitulo">Sobre o Marca-Página</span>
+          <h2 id="titulo-sobre">Um refúgio para quem lê sozinho</h2>
+          <div class="ornamento ornamento--esquerda" aria-hidden="true">❦</div>
+          <p class="sobre__lema">“O lugar onde você para, e sempre volta.”</p>
+        </div>
+        <div class="sobre__texto">
+          <p class="capitular">Ler sempre foi um gesto solitário, mas nunca deveria ser um gesto de solidão. Na internet, porém, o leitor anda perdido: as recomendações se espalham entre algoritmos, vídeos de trinta segundos e listas que parecem todas iguais. Encontrar o próximo livro é difícil; encontrar alguém para conversar sobre ele, mais ainda.</p>
+          <p>O Marca-Página nasceu para ser o seu porto seguro. Funciona como uma biblioteca antiga: um acervo organizado em alas por gênero, resenhas honestas escritas com calma e um salão de encontro, o Clube do Leitor, onde leitores leem juntos, trocam ideias e deixam as próprias resenhas.</p>
+          <p>Como o próprio nome diz, é o lugar onde você para, e para onde sempre volta.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DESTAQUES (imagem com link para cada página) ===== -->
+    <section class="secao secao--alt" aria-labelledby="titulo-destaques">
+      <div class="container">
+        <header class="cabecalho-secao">
+          <div class="ornamento" aria-hidden="true">❦</div>
+          <span class="sobretitulo">Destaques</span>
+          <h2 id="titulo-destaques">Por onde começar</h2>
+          <p>Três portas abertas para o seu próximo capítulo.</p>
+        </header>
+
+        <div class="destaques">
+          <article class="card destaque">
+            <a class="destaque__imagem" href="generos.html">
+              <img src="img/destaques/generos.jpg" alt="Corredor de uma biblioteca antiga com estantes altas de madeira escura" width="900" height="600" loading="lazy">
+            </a>
+            <div class="destaque__corpo">
+              <span class="destaque__numero">I</span>
+              <h3><a href="generos.html">Gêneros</a></h3>
+              <p>Dez alas, do romance ao terror, para você descobrir por onde o seu gosto caminha.</p>
+              <a class="link-seta" href="generos.html">Percorrer as alas</a>
+            </div>
+          </article>
+
+          <article class="card destaque">
+            <a class="destaque__imagem" href="livros.html">
+              <img src="img/destaques/livros.jpg" alt="Pilha de livros antigos de capa de couro diante de uma estante" width="900" height="600" loading="lazy">
+            </a>
+            <div class="destaque__corpo">
+              <span class="destaque__numero">II</span>
+              <h3><a href="livros.html">Livros</a></h3>
+              <p>Quarenta títulos com resenhas originais e sem spoilers para guiar a sua próxima escolha.</p>
+              <a class="link-seta" href="livros.html">Abrir o acervo</a>
+            </div>
+          </article>
+
+          <article class="card destaque">
+            <a class="destaque__imagem" href="clube.html">
+              <img src="img/destaques/clube.jpg" alt="Salão de leitura de uma biblioteca antiga com mesas, globos e estantes ornamentadas" width="900" height="600" loading="lazy">
+            </a>
+            <div class="destaque__corpo">
+              <span class="destaque__numero">III</span>
+              <h3><a href="clube.html">Clube do Leitor</a></h3>
+              <p>Um livro por mês, encontros online e boas conversas entre quem ama ler.</p>
+              <a class="link-seta" href="clube.html">Entrar no Clube</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CITAÇÃO (domínio público) ===== -->
+    <section class="secao secao--madeira citacao" aria-label="Citação sobre leitura">
+      <div class="container">
+        <blockquote>
+          <p>Ler é sonhar pela mão de outrem.</p>
+          <div class="ornamento" aria-hidden="true">❦</div>
+          <cite>Fernando Pessoa · Livro do Desassossego</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ===== CHAMADA FINAL ===== -->
+    <section class="secao" aria-labelledby="titulo-chamada">
+      <div class="container">
+        <div class="chamada">
+          <div>
+            <span class="sobretitulo">O Clube do Leitor</span>
+            <h2 id="titulo-chamada">Junte-se ao Clube do Leitor</h2>
+            <p>Todo mês, um livro escolhido com carinho e um encontro online para conversar sobre ele. Há sempre uma cadeira vaga perto da lareira, e ela é sua.</p>
+          </div>
+          <a class="btn" href="clube.html">Quero participar</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER (idêntico em todas as páginas) ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-colunas">
+        <div class="footer-marca">
+          <a class="logo" href="index.html"><img src="img/ui/marca-pagina.svg" alt="" width="20" height="28">Marca-Página</a>
+          <p>Uma biblioteca antiga para leitores do mundo novo. O lugar onde você para, e sempre volta.</p>
+        </div>
+        <nav class="footer-links" aria-label="Links rápidos">
+          <h2>Navegue</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="generos.html">Gêneros</a></li>
+            <li><a href="livros.html">Livros</a></li>
+            <li><a href="clube.html">Clube do Leitor</a></li>
+            <li><a href="contatos.html">Contatos</a></li>
+          </ul>
+        </nav>
+        <div class="footer-clube">
+          <h2>Próximo encontro</h2>
+          <p>Sábado, 12 de dezembro de 2026, às 19h: <a href="clube.html">A Menina que Roubava Livros</a>.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-base">
+      <div class="container">
+        <p>© 2026 Marca-Página — Projeto acadêmico</p>
+        <p class="footer-academico">Universidade Vila Velha · Análise e Desenvolvimento de Sistemas<br>Ludmilla Gozzer dos Santos e Danillo Martins Peruch</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

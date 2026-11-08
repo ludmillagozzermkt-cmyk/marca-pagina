@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fale com o Marca-Página: deixe sua carta para a biblioteca, siga nossas redes e conheça quem cuida do acervo.">
+  <title>Contatos | Marca-Página</title>
+  <link rel="icon" href="img/ui/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ===== HEADER (idêntico em todas as páginas; só muda a classe "ativo") ===== -->
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html"><img src="img/ui/marca-pagina.svg" alt="" width="20" height="28">Marca-Página</a>
+      <button class="menu-botao" type="button" aria-expanded="false" aria-controls="nav-principal" aria-label="Abrir menu"><span></span></button>
+      <nav class="nav-principal" id="nav-principal" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="generos.html">Gêneros</a></li>
+          <li><a href="livros.html">Livros</a></li>
+          <li><a href="clube.html">Clube do Leitor</a></li>
+          <li><a href="contatos.html" class="ativo" aria-current="page">Contatos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ===== TOPO DA PÁGINA ===== -->
+    <section class="topo-pagina">
+      <div class="container">
+        <div class="ornamento" aria-hidden="true">❦</div>
+        <span class="sobretitulo">Correspondência</span>
+        <h1>Contatos</h1>
+        <p>Deixe sua carta para a biblioteca. Toda mensagem é lida com calma, à luz de vela.</p>
+      </div>
+    </section>
+
+    <!-- ===== FORMULÁRIO + REDES ===== -->
+    <section class="secao" aria-label="Formulário de contato e redes sociais">
+      <div class="container contato-grid">
+
+        <!-- Formulário demonstrativo: o envio é simulado em js/main.js -->
+        <form class="card form-carta formulario" id="form-carta">
+          <h2>Escreva sua carta</h2>
+          <p>Sugestões de livros, pedidos para entrar no Clube ou qualquer dúvida: estamos ouvindo.</p>
+          <div class="campos-lado">
+            <div class="campo">
+              <label for="nome">Nome *</label>
+              <input type="text" id="nome" name="nome" autocomplete="name" placeholder="Como podemos te chamar?" required>
+            </div>
+            <div class="campo">
+              <label for="email">E-mail *</label>
+              <input type="email" id="email" name="email" autocomplete="email" placeholder="voce@exemplo.com" required>
+            </div>
+          </div>
+          <div class="campo">
+            <label for="assunto">Assunto *</label>
+            <select id="assunto" name="assunto" required>
+              <option value="">Escolha um assunto</option>
+              <option value="sugestao">Sugestão de livro</option>
+              <option value="clube">Quero entrar no Clube</option>
+              <option value="duvida">Dúvida</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="mensagem">Mensagem *</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Querida biblioteca…" required></textarea>
+          </div>
+          <div>
+            <button class="btn" type="submit">Enviar carta</button>
+          </div>
+          <p class="aviso-sucesso" id="aviso-carta" role="status" tabindex="-1" hidden>✓ Sua carta foi recebida! Responderemos em breve.</p>
+        </form>
+
+        <aside>
+          <div class="redes">
+            <h2>Encontre a gente</h2>
+            <ul>
+              <li>
+                <a href="#">
+                  <span class="redes__icone" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#F4EBDD" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.6"/><circle cx="16.8" cy="7.2" r="1" fill="#F4EBDD" stroke="none"/></svg>
+                  </span>
+                  <span><strong>Instagram</strong><span class="redes__perfil">@marcapagina.blog</span></span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="redes__icone" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#F4EBDD" stroke-width="1.6"><rect x="3" y="6" width="18" height="12" rx="3.5"/><path d="M10.5 9.5v5l4-2.5z" fill="#F4EBDD" stroke="none"/></svg>
+                  </span>
+                  <span><strong>YouTube</strong><span class="redes__perfil">Marca-Página</span></span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="redes__icone" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#F4EBDD" stroke-width="1.5"><path d="M4 6.5c3-1 5.5-1 8 .8 2.5-1.8 5-1.8 8-.8V18c-3-1-5.5-1-8 .8-2.5-1.8-5-1.8-8-.8z"/><path d="M12 7.3v11.5"/></svg>
+                  </span>
+                  <span><strong>Skoob</strong><span class="redes__perfil">Estante Marca-Página</span></span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="redes__icone" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#F4EBDD" stroke-width="1.6"><rect x="3.5" y="6" width="17" height="12" rx="2"/><path d="M4 7l8 6 8-6"/></svg>
+                  </span>
+                  <span><strong>E-mail</strong><span class="redes__perfil">cartas@marcapagina.blog</span></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="horario">
+            <h2>Horário da biblioteca</h2>
+            <p>Respondemos as cartas de segunda a sexta. Nos sábados de encontro, a gente se vê no Clube.</p>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- ===== EQUIPE ===== -->
+    <section class="secao secao--alt" aria-labelledby="t-equipe">
+      <div class="container">
+        <header class="cabecalho-secao">
+          <div class="ornamento" aria-hidden="true">❦</div>
+          <span class="sobretitulo">A equipe</span>
+          <h2 id="t-equipe">Quem cuida da biblioteca</h2>
+        </header>
+        <div class="equipe">
+          <article class="card integrante">
+            <span class="avatar" aria-hidden="true">L</span>
+            <h3>Ludmilla Gozzer dos Santos</h3>
+            <p class="integrante__papel">Curadoria e resenhas</p>
+            <p>Cuida das alas de fantasia e aventura e jura que todo leitor tem um hobbit dentro de si.</p>
+          </article>
+          <article class="card integrante">
+            <span class="avatar" aria-hidden="true">D</span>
+            <h3>Danillo Martins Peruch</h3>
+            <p class="integrante__papel">Clube do Leitor e conteúdo</p>
+            <p>Organiza os encontros do Clube e defende a literatura brasileira em toda conversa.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER (idêntico em todas as páginas) ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-colunas">
+        <div class="footer-marca">
+          <a class="logo" href="index.html"><img src="img/ui/marca-pagina.svg" alt="" width="20" height="28">Marca-Página</a>
+          <p>Uma biblioteca antiga para leitores do mundo novo. O lugar onde você para, e sempre volta.</p>
+        </div>
+        <nav class="footer-links" aria-label="Links rápidos">
+          <h2>Navegue</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="generos.html">Gêneros</a></li>
+            <li><a href="livros.html">Livros</a></li>
+            <li><a href="clube.html">Clube do Leitor</a></li>
+            <li><a href="contatos.html">Contatos</a></li>
+          </ul>
+        </nav>
+        <div class="footer-clube">
+          <h2>Próximo encontro</h2>
+          <p>Sábado, 12 de dezembro de 2026, às 19h: <a href="clube.html">A Menina que Roubava Livros</a>.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-base">
+      <div class="container">
+        <p>© 2026 Marca-Página — Projeto acadêmico</p>
+        <p class="footer-academico">Universidade Vila Velha · Análise e Desenvolvimento de Sistemas<br>Ludmilla Gozzer dos Santos e Danillo Martins Peruch</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

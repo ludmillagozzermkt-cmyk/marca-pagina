@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clube do Leitor do Marca-Página: livro do mês, próximos encontros online, como participar e recomendações da equipe.">
+  <title>Clube do Leitor | Marca-Página</title>
+  <link rel="icon" href="img/ui/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ===== HEADER (idêntico em todas as páginas; só muda a classe "ativo") ===== -->
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html"><img src="img/ui/marca-pagina.svg" alt="" width="20" height="28">Marca-Página</a>
+      <button class="menu-botao" type="button" aria-expanded="false" aria-controls="nav-principal" aria-label="Abrir menu"><span></span></button>
+      <nav class="nav-principal" id="nav-principal" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="generos.html">Gêneros</a></li>
+          <li><a href="livros.html">Livros</a></li>
+          <li><a href="clube.html" class="ativo" aria-current="page">Clube do Leitor</a></li>
+          <li><a href="contatos.html">Contatos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ===== TOPO DA PÁGINA ===== -->
+    <section class="topo-pagina">
+      <div class="container">
+        <div class="ornamento" aria-hidden="true">❦</div>
+        <span class="sobretitulo">O salão de encontro</span>
+        <h1>Clube do Leitor</h1>
+        <p>Ninguém precisa ler sozinho. Puxe uma cadeira, a conversa já vai começar.</p>
+      </div>
+    </section>
+
+    <!-- ===== 1. O QUE É O CLUBE ===== -->
+    <section class="secao" aria-labelledby="t-oque">
+      <div class="container">
+        <header class="cabecalho-secao">
+          <div class="ornamento" aria-hidden="true">❦</div>
+          <span class="sobretitulo">O que é</span>
+          <h2 id="t-oque">Um lugar para ler junto</h2>
+        </header>
+        <div class="clube-intro">
+          <p class="capitular">O Clube do Leitor é o salão da nossa biblioteca: um espaço para quem gosta de terminar um livro e ter com quem conversar sobre ele. Todo mês escolhemos uma leitura, cada pessoa lê no seu ritmo e, no fim, nos encontramos online para trocar impressões, dúvidas e trechos favoritos.</p>
+          <p><em>Não há prova, não há pressa e não existe opinião errada. Basta vontade de ler e de ouvir.</em></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 2. LIVRO DO MÊS ===== -->
+    <section class="secao secao--madeira" aria-labelledby="t-livromes">
+      <div class="container livro-mes">
+        <div class="livro-mes__capa">
+          <img class="capa" src="img/capas/a-menina-que-roubava-livros.jpg" alt="Capa do livro A Menina que Roubava Livros, de Markus Zusak" width="300" height="450">
+        </div>
+        <div>
+          <span class="sobretitulo">Livro do mês · Dezembro de 2026</span>
+          <h2 id="t-livromes">A Menina que Roubava Livros</h2>
+          <p class="livro-mes__autor">Markus Zusak</p>
+          <div class="ornamento ornamento--esquerda" aria-hidden="true">❦</div>
+          <h3>Por que escolhemos</h3>
+          <p>Porque é um livro sobre o poder das palavras, narrado pela Morte, que encontra beleza onde menos se espera. Para fechar o ano, nada melhor que uma história sobre ler, guardar e dividir livros com quem precisa deles.</p>
+          <h3>Para conversar</h3>
+          <ol class="perguntas">
+            <li>O que muda na leitura quando a Morte é a narradora?</li>
+            <li>Por que Liesel rouba livros, e o que cada um deles significa para ela?</li>
+            <li>Como as palavras protegem e ferem ao longo da história?</li>
+            <li>Qual personagem ficou com você depois da última página?</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== VOTAÇÃO DO PRÓXIMO LIVRO (lógica em js/main.js) ===== -->
+    <section class="secao secao--alt" id="votacao" aria-labelledby="t-votacao">
+      <div class="container">
+        <header class="cabecalho-secao">
+          <div class="ornamento" aria-hidden="true">❦</div>
+          <span class="sobretitulo">Votação aberta</span>
+          <h2 id="t-votacao">Escolha o próximo livro</h2>
+          <p>Três alas da biblioteca disputam o próximo encontro. Quem vence descansa por três rodadas, para o Clube passear por todo o acervo.</p>
+        </header>
+
+        <div class="votacao">
+          <div class="card votacao__info">
+            <dl class="votacao__dados">
+              <div><dt>Rodada</dt><dd id="votacao-rodada">—</dd></div>
+              <div><dt>Encontro</dt><dd id="votacao-encontro">—</dd></div>
+              <div><dt>Votação até</dt><dd id="votacao-prazo">—</dd></div>
+            </dl>
+            <ul class="votacao__regras">
+              <li>Três alas são sorteadas entre as que estão disponíveis.</li>
+              <li>Cada ala concorre com um livro que o Clube ainda não leu.</li>
+              <li>A ala vencedora fica fora das próximas três votações.</li>
+            </ul>
+          </div>
+
+          <div class="votacao__opcoes" id="votacao-opcoes"></div>
+          <noscript><p class="mural__nota">Ative o JavaScript do navegador para participar da votação.</p></noscript>
+          <p class="aviso-sucesso" id="aviso-voto" role="status" hidden></p>
+
+          <div class="votacao__painel">
+            <div class="card votacao__bloco">
+              <h3>Alas em descanso</h3>
+              <ul class="descanso" id="votacao-descanso"></ul>
+            </div>
+            <div class="card votacao__bloco">
+              <h3>Últimas escolhas do Clube</h3>
+              <ol class="historico" id="votacao-historico"></ol>
+            </div>
+          </div>
+
+          <div class="votacao__demo">
+            <p><strong>Modo demonstração:</strong> o site é estático, então o voto fica salvo só neste navegador. Encerre a rodada para ver a ala vencedora entrar em descanso e uma nova votação começar.</p>
+            <div class="votacao__demo-botoes">
+              <button class="btn btn--pequeno" type="button" id="votacao-encerrar">Encerrar rodada</button>
+              <button class="btn btn--pequeno btn--claro-escuro" type="button" id="votacao-reiniciar" hidden>Reiniciar demonstração</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 3. PRÓXIMOS ENCONTROS ===== -->
+    <section class="secao" aria-labelledby="t-encontros">
+      <div class="container">
+        <header class="cabecalho-secao">
+          <div class="ornamento" aria-hidden="true">❦</div>
+          <span class="sobretitulo">Agenda</span>
+          <h2 id="t-encontros">Próximos encontros</h2>
+          <p>Sempre aos sábados, às 19h, online.</p>
+        </header>
+        <div class="encontros">
+          <article class="card encontro">
+            <time class="encontro__data" datetime="2026-12-12T19:00"><span class="encontro__dia">12</span><span class="encontro__mes">DEZ 2026</span></time>
+            <div class="encontro__corpo">
+              <p class="encontro__quando">Sábado · 19h · Online</p>
+              <h3>A Menina que Roubava Livros</h3>
+              <p>Palavras que salvam: o que um livro pode fazer por alguém.</p>
+            </div>
+          </article>
+          <article class="card encontro">
+            <time class="encontro__data" datetime="2027-01-16T19:00"><span class="encontro__dia">16</span><span class="encontro__mes">JAN 2027</span></time>
+            <div class="encontro__corpo">
+              <p class="encontro__quando">Sábado · 19h · Online</p>
+              <h3>A definir pela votação</h3>
+              <p>O livro vencedor da <a href="#votacao">votação aberta</a> será lido para este encontro.</p>
+            </div>
+          </article>
+          <article class="card encontro">
+            <time class="encontro__data" datetime="2027-02-20T19:00"><span class="encontro__dia">20</span><span class="encontro__mes">FEV 2027</span></time>
+            <div class="encontro__corpo">
+              <p class="encontro__quando">Sábado · 19h · Online</p>
+              <h3>A definir pela votação</h3>
+              <p>Três novas alas entram na disputa assim que a rodada anterior terminar.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 4. COMO PARTICIPAR ===== -->
+    <section class="secao secao--alt" aria-labelledby="t-participar">
+      <div class="container">
+        <header class="cabecalho-secao">
+          <div class="ornamento" aria-hidden="true">❦</div>
+          <span class="sobretitulo">Passo a passo</span>
+          <h2 id="t-participar">Como participar</h2>
+        </header>
+        <ol class="passos">
+          <li>
+            <h3>Vote no próximo livro</h3>
+            <p>Escolha entre as três alas da rodada; o livro vencedor é o do próximo encontro.</p>
+          </li>
+          <li>
+            <h3>Leia no seu ritmo</h3>
+            <p>Sem metas de páginas: cada um lê do seu jeito.</p>
+          </li>
+          <li>
+            <h3>Entre no encontro</h3>
+            <p>No sábado combinado, acesse a sala online pelo link enviado por e-mail.</p>
+          </li>
+          <li>
+            <h3>Compartilhe</h3>
+            <p>Conte o que sentiu, leia um trecho, ouça os outros leitores e deixe sua resenha no acervo.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== 5. RECOMENDAÇÕES DA EQUIPE ===== -->
+    <section class="secao" aria-labelledby="t-recomendacoes">
+      <div class="container">
+        <header class="cabecalho-secao">
+          <div class="ornamento" aria-hidden="true">❦</div>
+          <span class="sobretitulo">Da nossa estante</span>
+          <h2 id="t-recomendacoes">Recomendações da equipe</h2>
+        </header>
+        <div class="recomendacoes">
+          <article class="card recomendacao">
+            <div class="recomendacao__topo">
+              <img class="capa" src="img/capas/o-hobbit.jpg" alt="Capa do livro O Hobbit, de J. R. R. Tolkien" width="90" height="135" loading="lazy">
+              <div>
+                <span class="sobretitulo">Ludmilla recomenda</span>
+                <h3>O Hobbit</h3>
+                <p class="livro__autor">J. R. R. Tolkien</p>
+              </div>
+            </div>
+            <blockquote>“Para mim, é o livro perfeito para voltar a gostar de ler: uma aventura simples, cheia de humor, que cabe num fim de semana e fica na memória por anos.”</blockquote>
+            <div class="recomendacao__assinatura">
+              <span class="avatar" aria-hidden="true">L</span>
+              <p><strong>Ludmilla</strong><br>Equipe Marca-Página</p>
+            </div>
+          </article>
+          <article class="card recomendacao">
+            <div class="recomendacao__topo">
+              <img class="capa" src="img/capas/torto-arado.jpg" alt="Capa do livro Torto Arado, de Itamar Vieira Junior" width="90" height="135" loading="lazy">
+              <div>
+                <span class="sobretitulo">Danillo recomenda</span>
+                <h3>Torto Arado</h3>
+                <p class="livro__autor">Itamar Vieira Junior</p>
+              </div>
+            </div>
+            <blockquote>“Um romance brasileiro forte e bonito, que me fez enxergar o sertão de outro jeito. Leia devagar e preste atenção nas vozes das duas irmãs.”</blockquote>
+            <div class="recomendacao__assinatura">
+              <span class="avatar" aria-hidden="true">D</span>
+              <p><strong>Danillo</strong><br>Equipe Marca-Página</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 6. CHAMADA ===== -->
+    <section class="secao secao--madeira chamada-clube" aria-labelledby="t-cadeira">
+      <div class="container">
+        <h2 id="t-cadeira">A sua cadeira está guardada</h2>
+        <p>Mande uma carta dizendo que quer participar e enviamos o convite do próximo encontro.</p>
+        <a class="btn" href="contatos.html">Quero participar</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER (idêntico em todas as páginas) ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-colunas">
+        <div class="footer-marca">
+          <a class="logo" href="index.html"><img src="img/ui/marca-pagina.svg" alt="" width="20" height="28">Marca-Página</a>
+          <p>Uma biblioteca antiga para leitores do mundo novo. O lugar onde você para, e sempre volta.</p>
+        </div>
+        <nav class="footer-links" aria-label="Links rápidos">
+          <h2>Navegue</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="generos.html">Gêneros</a></li>
+            <li><a href="livros.html">Livros</a></li>
+            <li><a href="clube.html">Clube do Leitor</a></li>
+            <li><a href="contatos.html">Contatos</a></li>
+          </ul>
+        </nav>
+        <div class="footer-clube">
+          <h2>Próximo encontro</h2>
+          <p>Sábado, 12 de dezembro de 2026, às 19h: <a href="clube.html">A Menina que Roubava Livros</a>.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-base">
+      <div class="container">
+        <p>© 2026 Marca-Página — Projeto acadêmico</p>
+        <p class="footer-academico">Universidade Vila Velha · Análise e Desenvolvimento de Sistemas<br>Ludmilla Gozzer dos Santos e Danillo Martins Peruch</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

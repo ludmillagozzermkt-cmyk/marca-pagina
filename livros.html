@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="O acervo completo do Marca-Página: 40 livros em 10 estantes, com resenhas originais e sem spoilers. Deixe também a sua resenha.">
+  <title>Livros | Marca-Página</title>
+  <link rel="icon" href="img/ui/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ===== HEADER (idêntico em todas as páginas; só muda a classe "ativo") ===== -->
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html"><img src="img/ui/marca-pagina.svg" alt="" width="20" height="28">Marca-Página</a>
+      <button class="menu-botao" type="button" aria-expanded="false" aria-controls="nav-principal" aria-label="Abrir menu"><span></span></button>
+      <nav class="nav-principal" id="nav-principal" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="generos.html">Gêneros</a></li>
+          <li><a href="livros.html" class="ativo" aria-current="page">Livros</a></li>
+          <li><a href="clube.html">Clube do Leitor</a></li>
+          <li><a href="contatos.html">Contatos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ===== TOPO DA PÁGINA ===== -->
+    <section class="topo-pagina">
+      <div class="container">
+        <div class="ornamento" aria-hidden="true">❦</div>
+        <span class="sobretitulo">O acervo completo</span>
+        <h1>Quarenta livros, dez estantes</h1>
+        <p>Resenhas originais, sem spoilers, para escolher com calma o próximo capítulo.</p>
+      </div>
+    </section>
+
+    <!-- ===== ÍNDICE DE GÊNEROS (links-âncora) ===== -->
+    <nav class="indice" aria-label="Índice de gêneros">
+      <div class="container">
+        <span class="sobretitulo">Ir direto para a ala</span>
+        <ul>
+          <li><a href="#romance">Romance</a></li>
+          <li><a href="#fantasia">Fantasia</a></li>
+          <li><a href="#suspense">Suspense e Mistério</a></li>
+          <li><a href="#terror">Terror</a></li>
+          <li><a href="#drama">Drama</a></li>
+          <li><a href="#ficcao-cientifica">Ficção Científica e Distopia</a></li>
+          <li><a href="#romantasia">Romantasia</a></li>
+          <li><a href="#classicos">Clássicos</a></li>
+          <li><a href="#aventura">Aventura</a></li>
+          <li><a href="#brasileira">Literatura Brasileira</a></li>
+          <li><a href="#deixe-sua-resenha">✎ Deixe sua resenha</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ===== ALA I — ROMANCE ===== -->
+    <section class="secao ala" id="romance" aria-labelledby="t-romance">
+      <div class="container">
+        <div class="ala__cabecalho">
+          <div>
+            <span class="sobretitulo">Ala I</span>
+            <h2 id="t-romance">Romance</h2>
+            <p>Histórias sobre encontros, desencontros e o coração em todas as idades.</p>
+            <div class="ornamento ornamento--esquerda" aria-hidden="true">❦</div>
+          </div>
+          <a class="link-topo" href="#top">↑ Voltar ao topo</a>
+        </div>
+        <div class="estante">
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/e-assim-que-acaba.jpg" alt="Capa do livro É Assim que Acaba, de Colleen Hoover" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>É Assim que Acaba</h3>
+              <p class="livro__autor">Colleen Hoover</p>
+              <p class="nota" role="img" aria-label="Nota 5 de 5">◆◆◆◆◆</p>
+              <p class="livro__resenha capitular">Lily recomeça a vida em Boston, abre a floricultura com que sempre sonhou e se apaixona por um neurocirurgião encantador. Aos poucos, o romance revela camadas difíceis, e o passado volta a bater à porta. O que torna o livro especial é a coragem de tratar um tema doloroso com delicadeza, sem caricaturas. Indicado para quem busca uma história de amor que também faz pensar, e que pede um lenço por perto.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="e-assim-que-acaba">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/a-hipotese-do-amor.jpg" alt="Capa do livro A Hipótese do Amor, de Ali Hazelwood" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>A Hipótese do Amor</h3>
+              <p class="livro__autor">Ali Hazelwood</p>
+              <p class="nota" role="img" aria-label="Nota 4 de 5">◆◆◆◆◇</p>
+              <p class="livro__resenha capitular">Olive, doutoranda em biologia, beija o primeiro homem que vê no corredor para provar à amiga que está namorando. O problema: ele é Adam Carlsen, o professor mais temido do departamento. O namoro de mentira vira acordo, e o acordo vira outra coisa. Com humor afiado e charme nerd, o livro brinca com clichês sem perder o coração. Perfeito para quem ama comédias românticas e laboratórios na mesma medida.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="a-hipotese-do-amor">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/como-eu-era-antes-de-voce.jpg" alt="Capa do livro Como Eu Era Antes de Você, de Jojo Moyes" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>Como Eu Era Antes de Você</h3>
+              <p class="livro__autor">Jojo Moyes</p>
+              <p class="nota" role="img" aria-label="Nota 4 de 5">◆◆◆◆◇</p>
+              <p class="livro__resenha capitular">Lou Clark precisa de um emprego e aceita cuidar de Will Traynor, um homem que perdeu os movimentos após um acidente e, com eles, a vontade de viver. Entre sarcasmos e pequenas descobertas, os dois mudam um ao outro de um jeito inesperado. A força do livro está nos diálogos e na honestidade diante de escolhas difíceis. Para quem gosta de romances que fazem rir e chorar na mesma página.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="como-eu-era-antes-de-voce">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/orgulho-e-preconceito.jpg" alt="Capa do livro Orgulho e Preconceito, de Jane Austen" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>Orgulho e Preconceito</h3>
+              <p class="livro__autor">Jane Austen</p>
+              <p class="nota" role="img" aria-label="Nota 5 de 5">◆◆◆◆◆</p>
+              <p class="livro__resenha capitular">Na Inglaterra rural do século XIX, Elizabeth Bennet tem opinião própria, língua afiada e pouca paciência para o orgulhoso Sr. Darcy. Entre bailes, cartas e mal-entendidos, os dois aprendem que a primeira impressão quase nunca é a última. A ironia de Austen continua fresca mais de duzentos anos depois. Ideal para começar pelos clássicos sem medo, ao lado de uma das heroínas mais queridas da literatura.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="orgulho-e-preconceito">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ALA II — FANTASIA ===== -->
+    <section class="secao ala" id="fantasia" aria-labelledby="t-fantasia">
+      <div class="container">
+        <div class="ala__cabecalho">
+          <div>
+            <span class="sobretitulo">Ala II</span>
+            <h2 id="t-fantasia">Fantasia</h2>
+            <p>Mundos inventados, magia e jornadas que começam numa porta qualquer.</p>
+            <div class="ornamento ornamento--esquerda" aria-hidden="true">❦</div>
+          </div>
+          <a class="link-topo" href="#top">↑ Voltar ao topo</a>
+        </div>
+        <div class="estante">
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/eragon.jpg" alt="Capa do livro Eragon, de Christopher Paolini" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>Eragon</h3>
+              <p class="livro__autor">Christopher Paolini</p>
+              <p class="nota" role="img" aria-label="Nota 4 de 5">◆◆◆◆◇</p>
+              <p class="livro__resenha capitular">Um garoto do campo encontra uma pedra azul na floresta, e dela nasce uma dragoa. A partir daí, Eragon é empurrado para uma guerra antiga, com elfos, anões e um rei tirano no caminho. Escrito por um autor que começou a obra ainda adolescente, o livro tem o encanto das grandes jornadas clássicas. Indicado para quem está chegando à fantasia ou sente saudade de histórias com dragões de verdade.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="eragon">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/harry-potter-e-a-pedra-filosofal.jpg" alt="Capa do livro Harry Potter e a Pedra Filosofal, de J. K. Rowling" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>Harry Potter e a Pedra Filosofal</h3>
+              <p class="livro__autor">J. K. Rowling</p>
+              <p class="nota" role="img" aria-label="Nota 5 de 5">◆◆◆◆◆</p>
+              <p class="livro__resenha capitular">Aos onze anos, Harry descobre que é bruxo e troca o armário sob a escada por um castelo de escadas que mudam de lugar. Em Hogwarts, encontra amigos, mistérios e uma pista sobre o próprio passado. A magia está nos detalhes: doces estranhos, cartas trazidas por corujas, um esporte jogado em vassouras. Uma porta de entrada perfeita para leitores de qualquer idade, e um lugar para onde sempre se volta.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="harry-potter-e-a-pedra-filosofal">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/a-rainha-vermelha.jpg" alt="Capa do livro A Rainha Vermelha, de Victoria Aveyard" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>A Rainha Vermelha</h3>
+              <p class="livro__autor">Victoria Aveyard</p>
+              <p class="nota" role="img" aria-label="Nota 4 de 5">◆◆◆◆◇</p>
+              <p class="livro__resenha capitular">Num reino dividido pela cor do sangue, os Prateados têm poderes e governam; os Vermelhos servem. Mare Barrow é Vermelha, mas descobre um dom que não deveria existir e passa a viver entre a corte e a rebelião. Com ritmo acelerado e traições a cada capítulo, o livro prende de ponta a ponta. Indicado para fãs de distopias juvenis que querem uma boa pitada de magia.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="a-rainha-vermelha">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/o-nome-do-vento.jpg" alt="Capa do livro O Nome do Vento, de Patrick Rothfuss" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>O Nome do Vento</h3>
+              <p class="livro__autor">Patrick Rothfuss</p>
+              <p class="nota" role="img" aria-label="Nota 5 de 5">◆◆◆◆◆</p>
+              <p class="livro__resenha capitular">Numa taverna esquecida, um homem comum aceita contar a verdadeira história de Kvothe, o lendário arcanista, músico e fugitivo. O que se segue é uma narrativa sobre infância, perda, música e uma universidade de magia que cobra caro por cada segredo. A prosa de Rothfuss é lírica e cuidadosa, quase uma canção. Para leitores pacientes que amam mundos ricos e personagens contados em primeira pessoa.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="o-nome-do-vento">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ALA III — SUSPENSE E MISTÉRIO ===== -->
+    <section class="secao ala" id="suspense" aria-labelledby="t-suspense">
+      <div class="container">
+        <div class="ala__cabecalho">
+          <div>
+            <span class="sobretitulo">Ala III</span>
+            <h2 id="t-suspense">Suspense e Mistério</h2>
+            <p>Pistas, segredos e reviravoltas que prendem até a última linha.</p>
+            <div class="ornamento ornamento--esquerda" aria-hidden="true">❦</div>
+          </div>
+          <a class="link-topo" href="#top">↑ Voltar ao topo</a>
+        </div>
+        <div class="estante">
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/a-paciente-silenciosa.jpg" alt="Capa do livro A Paciente Silenciosa, de Alex Michaelides" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>A Paciente Silenciosa</h3>
+              <p class="livro__autor">Alex Michaelides</p>
+              <p class="nota" role="img" aria-label="Nota 5 de 5">◆◆◆◆◆</p>
+              <p class="livro__resenha capitular">Alicia Berenson, uma pintora famosa, atira cinco vezes no marido e nunca mais diz uma palavra. Anos depois, o psicoterapeuta Theo Faber fica obcecado em fazê-la falar e descobrir o que aconteceu naquela noite. Em capítulos curtos, que alternam a voz de Theo e o diário de Alicia, a tensão cresce em silêncio até um final que obriga a repensar tudo. Para quem gosta de mistérios psicológicos e reviravoltas que ficam ecoando.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="a-paciente-silenciosa">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/verity.jpg" alt="Capa do livro Verity, de Colleen Hoover" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>Verity</h3>
+              <p class="livro__autor">Colleen Hoover</p>
+              <p class="nota" role="img" aria-label="Nota 4 de 5">◆◆◆◆◇</p>
+              <p class="livro__resenha capitular">Lowen, uma escritora em apuros, aceita terminar a série de Verity Crawford, autora de sucesso que sofreu um grave acidente. Ao vasculhar o escritório da casa, encontra uma autobiografia inacabada, cheia de confissões perturbadoras que ninguém deveria ler. A partir daí, cada página deixa o leitor mais inquieto e menos seguro do que é verdade. Um suspense sombrio, com cenas fortes, para leitores adultos que gostam de discutir o final por dias.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="verity">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/e-nao-sobrou-nenhum.jpg" alt="Capa do livro E Não Sobrou Nenhum, de Agatha Christie" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>E Não Sobrou Nenhum</h3>
+              <p class="livro__autor">Agatha Christie</p>
+              <p class="nota" role="img" aria-label="Nota 5 de 5">◆◆◆◆◆</p>
+              <p class="livro__resenha capitular">Dez desconhecidos são convidados para uma ilha isolada no litoral inglês. Na primeira noite, uma voz os acusa de crimes do passado, e eles começam a morrer, um a um, seguindo os versos de uma antiga cantiga infantil. Agatha Christie arma aqui um dos quebra-cabeças mais engenhosos do romance policial, sem detetive para salvar ninguém. Ideal para conhecer a Rainha do Crime e testar a própria capacidade de dedução.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="e-nao-sobrou-nenhum">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/o-homem-de-giz.jpg" alt="Capa do livro O Homem de Giz, de C. J. Tudor" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>O Homem de Giz</h3>
+              <p class="livro__autor">C. J. Tudor</p>
+              <p class="nota" role="img" aria-label="Nota 4 de 5">◆◆◆◆◇</p>
+              <p class="livro__resenha capitular">Em 1986, um grupo de amigos de uma pequena cidade inglesa se comunica por bonecos de giz desenhados no chão, até que os desenhos levam a um corpo no bosque. Trinta anos depois, Eddie recebe uma carta com um homem de giz e percebe que o passado não ficou enterrado. Alternando as duas épocas, o livro mistura nostalgia de infância e suspense com um toque de terror. Para fãs de mistérios em cidades pequenas.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="o-homem-de-giz">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ALA IV — TERROR ===== -->
+    <section class="secao ala" id="terror" aria-labelledby="t-terror">
+      <div class="container">
+        <div class="ala__cabecalho">
+          <div>
+            <span class="sobretitulo">Ala IV</span>
+            <h2 id="t-terror">Terror</h2>
+            <p>O medo como companhia, em casas assombradas, cidades pequenas e mentes inquietas.</p>
+            <div class="ornamento ornamento--esquerda" aria-hidden="true">❦</div>
+          </div>
+          <a class="link-topo" href="#top">↑ Voltar ao topo</a>
+        </div>
+        <div class="estante">
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/it-a-coisa.jpg" alt="Capa do livro It: A Coisa, de Stephen King" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>It: A Coisa</h3>
+              <p class="livro__autor">Stephen King</p>
+              <p class="nota" role="img" aria-label="Nota 5 de 5">◆◆◆◆◆</p>
+              <p class="livro__resenha capitular">Em Derry, uma cidade aparentemente pacata, crianças desaparecem a cada vinte e sete anos. Sete amigos, o Clube dos Perdedores, enfrentam na infância uma criatura que assume a forma dos seus maiores medos, quase sempre a de um palhaço. Adultos, são chamados de volta para cumprir uma promessa. Mais do que um livro de monstro, é uma história sobre amizade, memória e o fim da infância. Para leitores corajosos e com fôlego.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="it-a-coisa">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/o-iluminado.jpg" alt="Capa do livro O Iluminado, de Stephen King" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>O Iluminado</h3>
+              <p class="livro__autor">Stephen King</p>
+              <p class="nota" role="img" aria-label="Nota 5 de 5">◆◆◆◆◆</p>
+              <p class="livro__resenha capitular">Jack Torrance aceita ser zelador do Hotel Overlook durante o inverno, quando a neve isola o lugar do resto do mundo. Leva a esposa, Wendy, e o filho, Danny, um menino com um dom especial para ver o que não deveria. Aos poucos, o hotel parece despertar, e o maior perigo pode estar dentro da própria família. Stephen King constrói o medo com paciência e muita humanidade. Para quem gosta de terror psicológico de verdade.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="o-iluminado">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/a-assombracao-da-casa-da-colina.jpg" alt="Capa do livro A Assombração da Casa da Colina, de Shirley Jackson" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>A Assombração da Casa da Colina</h3>
+              <p class="livro__autor">Shirley Jackson</p>
+              <p class="nota" role="img" aria-label="Nota 4 de 5">◆◆◆◆◇</p>
+              <p class="livro__resenha capitular">Quatro pessoas aceitam passar um verão na Casa da Colina, uma mansão com fama de assombrada, para estudar fenômenos sobrenaturais. Entre elas está Eleanor, uma mulher solitária que finalmente sente que pertence a algum lugar, talvez até demais. Shirley Jackson prefere sugerir a mostrar, e é justamente isso que torna o livro tão inquietante. Um clássico curto e elegante, perfeito para quem prefere arrepios sutis a sustos fáceis.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="a-assombracao-da-casa-da-colina">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/o-exorcista.jpg" alt="Capa do livro O Exorcista, de William Peter Blatty" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>O Exorcista</h3>
+              <p class="livro__autor">William Peter Blatty</p>
+              <p class="nota" role="img" aria-label="Nota 4 de 5">◆◆◆◆◇</p>
+              <p class="livro__resenha capitular">Em Washington, a pequena Regan começa a mudar de comportamento de forma assustadora, e os médicos não encontram explicação. Desesperada, a mãe recorre ao padre Damien Karras, um psiquiatra que atravessa uma crise de fé. Inspirado em um caso real, o livro vai além do horror e discute ciência, crença e culpa com seriedade. É pesado e tem cenas perturbadoras, por isso é indicado para leitores adultos que querem conhecer um marco do gênero.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="o-exorcista">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ALA V — DRAMA ===== -->
+    <section class="secao ala" id="drama" aria-labelledby="t-drama">
+      <div class="container">
+        <div class="ala__cabecalho">
+          <div>
+            <span class="sobretitulo">Ala V</span>
+            <h2 id="t-drama">Drama</h2>
+            <p>Vidas comuns diante de grandes perguntas: perda, amizade, coragem.</p>
+            <div class="ornamento ornamento--esquerda" aria-hidden="true">❦</div>
+          </div>
+          <a class="link-topo" href="#top">↑ Voltar ao topo</a>
+        </div>
+        <div class="estante">
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/a-menina-que-roubava-livros.jpg" alt="Capa do livro A Menina que Roubava Livros, de Markus Zusak" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>A Menina que Roubava Livros</h3>
+              <p class="livro__autor">Markus Zusak</p>
+              <p class="nota" role="img" aria-label="Nota 5 de 5">◆◆◆◆◆</p>
+              <p class="livro__resenha capitular">Na Alemanha nazista, Liesel Meminger é entregue a uma família adotiva e descobre, aos poucos, o poder das palavras. Ela aprende a ler com o pai adotivo, rouba livros quando pode e os divide com quem precisa, inclusive com um jovem judeu escondido no porão. Quem narra é a Morte, cansada e surpreendentemente sensível. Um livro sobre perda e bondade em tempos sombrios, para quem acredita que ler pode salvar alguém.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="a-menina-que-roubava-livros">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/extraordinario.jpg" alt="Capa do livro Extraordinário, de R. J. Palacio" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>Extraordinário</h3>
+              <p class="livro__autor">R. J. Palacio</p>
+              <p class="nota" role="img" aria-label="Nota 5 de 5">◆◆◆◆◆</p>
+              <p class="livro__resenha capitular">August Pullman nasceu com uma diferença facial e, depois de anos estudando em casa, vai pela primeira vez à escola. O livro acompanha esse ano pelos olhos de Auggie e de pessoas ao redor dele, como a irmã e os novos colegas. Com humor e delicadeza, fala de bullying, amizade e da escolha de ser gentil. É leve de ler e profundo de sentir, indicado para leitores de todas as idades e ótimo para ler em família.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="extraordinario">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/a-culpa-e-das-estrelas.jpg" alt="Capa do livro A Culpa é das Estrelas, de John Green" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>A Culpa é das Estrelas</h3>
+              <p class="livro__autor">John Green</p>
+              <p class="nota" role="img" aria-label="Nota 4 de 5">◆◆◆◆◇</p>
+              <p class="livro__resenha capitular">Hazel tem dezesseis anos, convive com um câncer e frequenta, sem muita vontade, um grupo de apoio. Lá conhece Augustus Waters, um garoto charmoso e cheio de ideias, e a vida dos dois muda de rumo. Juntos, partem atrás do autor do livro preferido de Hazel. John Green escreve com humor e inteligência sobre amor, doença e o medo de ser esquecido. Para quem não tem medo de chorar e gosta de histórias de primeiro amor.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="a-culpa-e-das-estrelas">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/o-pequeno-principe.jpg" alt="Capa do livro O Pequeno Príncipe, de Antoine de Saint-Exupéry" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>O Pequeno Príncipe</h3>
+              <p class="livro__autor">Antoine de Saint-Exupéry</p>
+              <p class="nota" role="img" aria-label="Nota 5 de 5">◆◆◆◆◆</p>
+              <p class="livro__resenha capitular">Um aviador cai no deserto do Saara e encontra um menino de cabelos dourados que veio de um planeta minúsculo. Pouco a pouco, o pequeno príncipe conta suas viagens por outros mundos e sua história com uma rosa muito especial. Por trás da aparência de livro infantil, há reflexões sobre amizade, responsabilidade e o que realmente importa. Curto e ilustrado pelo próprio autor, é para ler na infância e reler em todas as idades seguintes.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="o-pequeno-principe">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ALA VI — FICÇÃO CIENTÍFICA E DISTOPIA ===== -->
+    <section class="secao ala" id="ficcao-cientifica" aria-labelledby="t-ficcao">
+      <div class="container">
+        <div class="ala__cabecalho">
+          <div>
+            <span class="sobretitulo">Ala VI</span>
+            <h2 id="t-ficcao">Ficção Científica e Distopia</h2>
+            <p>Futuros possíveis que dizem muito sobre o presente.</p>
+            <div class="ornamento ornamento--esquerda" aria-hidden="true">❦</div>
+          </div>
+          <a class="link-topo" href="#top">↑ Voltar ao topo</a>
+        </div>
+        <div class="estante">
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/jogos-vorazes.jpg" alt="Capa do livro Jogos Vorazes, de Suzanne Collins" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>Jogos Vorazes</h3>
+              <p class="livro__autor">Suzanne Collins</p>
+              <p class="nota" role="img" aria-label="Nota 5 de 5">◆◆◆◆◆</p>
+              <p class="livro__resenha capitular">Em Panem, país erguido sobre as ruínas da América do Norte, a Capital obriga cada distrito a enviar dois jovens para um espetáculo televisionado e mortal. Quando a irmã caçula é sorteada, Katniss Everdeen se oferece no lugar dela. O que começa como luta pela sobrevivência vira símbolo de resistência. Com ritmo de tirar o fôlego, o livro também critica a violência como entretenimento. Para começar pelas distopias e não largar mais.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="jogos-vorazes">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/1984.jpg" alt="Capa do livro 1984, de George Orwell" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>1984</h3>
+              <p class="livro__autor">George Orwell</p>
+              <p class="nota" role="img" aria-label="Nota 5 de 5">◆◆◆◆◆</p>
+              <p class="livro__resenha capitular">Winston Smith trabalha no Ministério da Verdade reescrevendo o passado para que ele concorde com o Partido. Num país onde o Grande Irmão vigia tudo, até pensar é perigoso, e mesmo assim Winston começa a duvidar e a desejar algo diferente. Escrito em 1948, o livro inventou expressões que usamos até hoje e continua assustadoramente atual. Leitura densa e necessária para entender como a liberdade pode ser perdida aos poucos.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="1984">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/fahrenheit-451.jpg" alt="Capa do livro Fahrenheit 451, de Ray Bradbury" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>Fahrenheit 451</h3>
+              <p class="livro__autor">Ray Bradbury</p>
+              <p class="nota" role="img" aria-label="Nota 4 de 5">◆◆◆◆◇</p>
+              <p class="livro__resenha capitular">Guy Montag é bombeiro, mas o trabalho dele não é apagar incêndios: é queimar livros, proibidos por lei. Uma conversa com a jovem vizinha Clarisse faz Montag questionar tudo, e ele começa a esconder livros em casa. Bradbury escreve com imagens poéticas sobre uma sociedade distraída por telas e com medo de pensar. Curto e marcante, é especial para quem ama livros e quer entender por que eles incomodam tanto quem deseja controlar.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="fahrenheit-451">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/divergente.jpg" alt="Capa do livro Divergente, de Veronica Roth" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>Divergente</h3>
+              <p class="livro__autor">Veronica Roth</p>
+              <p class="nota" role="img" aria-label="Nota 4 de 5">◆◆◆◆◇</p>
+              <p class="livro__resenha capitular">Numa Chicago futurista, a sociedade é dividida em cinco facções, cada uma dedicada a uma virtude. Aos dezesseis anos, Beatrice precisa escolher a sua e descobre que é Divergente: alguém que não se encaixa em nenhuma, o que é perigoso. Ela entra na Audácia e enfrenta treinos duros, novos amigos e uma conspiração crescente. Ação, romance e perguntas sobre identidade se misturam bem. Para jovens leitores que gostam de adrenalina.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="divergente">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ALA VII — ROMANCE DE FANTASIA (ROMANTASIA) ===== -->
+    <section class="secao ala" id="romantasia" aria-labelledby="t-romantasia">
+      <div class="container">
+        <div class="ala__cabecalho">
+          <div>
+            <span class="sobretitulo">Ala VII</span>
+            <h2 id="t-romantasia">Romance de Fantasia</h2>
+            <p>A magia da fantasia e a intensidade do romance na mesma história.</p>
+            <div class="ornamento ornamento--esquerda" aria-hidden="true">❦</div>
+          </div>
+          <a class="link-topo" href="#top">↑ Voltar ao topo</a>
+        </div>
+        <div class="estante">
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/quarta-asa.jpg" alt="Capa do livro Quarta Asa, de Rebecca Yarros" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>Quarta Asa</h3>
+              <p class="livro__autor">Rebecca Yarros</p>
+              <p class="nota" role="img" aria-label="Nota 5 de 5">◆◆◆◆◆</p>
+              <p class="livro__resenha capitular">Violet Sorrengail foi preparada para ser escriba, mas é obrigada pela mãe, uma general, a entrar no Instituto Militar de Basgiath, onde se formam os cavaleiros de dragão. Lá os cadetes morrem com frequência, e Violet ainda precisa lidar com Xaden, um rival perigoso e atraente. Viciante e cheio de ação, o livro mistura escola militar, dragões com personalidade e um romance intenso. Para leitores adultos que gostam de emoções à flor da pele.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="quarta-asa">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/corte-de-espinhos-e-rosas.jpg" alt="Capa do livro Corte de Espinhos e Rosas, de Sarah J. Maas" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>Corte de Espinhos e Rosas</h3>
+              <p class="livro__autor">Sarah J. Maas</p>
+              <p class="nota" role="img" aria-label="Nota 4 de 5">◆◆◆◆◇</p>
+              <p class="livro__resenha capitular">Para alimentar a família, Feyre caça na floresta e mata um lobo que, na verdade, era um feérico. Como pagamento, é levada para Prythian, a terra mágica dos feéricos, onde passa a viver com o misterioso Tamlin. Inspirado em A Bela e a Fera, o livro aos poucos revela uma ameaça muito maior. É a porta de entrada de uma das séries mais populares do gênero, indicada para adultos que gostam de cortes mágicas, intrigas e romance.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="corte-de-espinhos-e-rosas">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/o-principe-cruel.jpg" alt="Capa do livro O Príncipe Cruel, de Holly Black" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>O Príncipe Cruel</h3>
+              <p class="livro__autor">Holly Black</p>
+              <p class="nota" role="img" aria-label="Nota 4 de 5">◆◆◆◆◇</p>
+              <p class="livro__resenha capitular">Jude tinha sete anos quando os pais foram assassinados e ela e as irmãs foram levadas para viver na Corte das Fadas. Mortal entre criaturas imortais e cruéis, Jude quer conquistar um lugar ali, mesmo que isso a coloque contra o príncipe Cardan, o mais insuportável de todos. Holly Black cria um mundo de intrigas políticas, mentiras e alianças frágeis. Ideal para quem gosta de protagonistas ambiciosas e de romances que começam com rivalidade.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="o-principe-cruel">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+          <article class="livro">
+            <!-- Capa não encontrada em fonte confiável: fallback estilizado em CSS -->
+            <div class="livro__prateleira"><div class="capa capa-fallback" role="img" aria-label="Capa ilustrativa do livro A Serpente e as Asas Feitas de Noite, de Carissa Broadbent">A Serpente e as Asas Feitas de Noite<small>Carissa Broadbent</small></div></div>
+            <div class="livro__info">
+              <h3>A Serpente e as Asas Feitas de Noite</h3>
+              <p class="livro__autor">Carissa Broadbent</p>
+              <p class="nota" role="img" aria-label="Nota 4 de 5">◆◆◆◆◇</p>
+              <p class="livro__resenha capitular">Oraya é uma humana criada como filha pelo rei dos vampiros, num mundo onde gente como ela é presa. Para conquistar seu lugar e sobreviver, entra no Kejari, um torneio mortal oferecido à deusa da morte, e precisa se aliar a um rival misterioso. Com atmosfera sombria, vampiros elegantes e um romance de combustão lenta, o livro conquistou os fãs do gênero. Para leitores adultos que gostam de fantasia gótica e de torneios perigosos.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="a-serpente-e-as-asas-feitas-de-noite">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ALA VIII — LITERATURA CLÁSSICA ===== -->
+    <section class="secao ala" id="classicos" aria-labelledby="t-classicos">
+      <div class="container">
+        <div class="ala__cabecalho">
+          <div>
+            <span class="sobretitulo">Ala VIII</span>
+            <h2 id="t-classicos">Literatura Clássica</h2>
+            <p>Obras que atravessaram séculos e continuam falando com a gente.</p>
+            <div class="ornamento ornamento--esquerda" aria-hidden="true">❦</div>
+          </div>
+          <a class="link-topo" href="#top">↑ Voltar ao topo</a>
+        </div>
+        <div class="estante">
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/dom-casmurro.jpg" alt="Capa do livro Dom Casmurro, de Machado de Assis" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>Dom Casmurro</h3>
+              <p class="livro__autor">Machado de Assis</p>
+              <p class="nota" role="img" aria-label="Nota 5 de 5">◆◆◆◆◆</p>
+              <p class="livro__resenha capitular">Bentinho, já velho e solitário, decide contar a própria vida para entender como chegou até ali. No centro de tudo está Capitu, a amiga de infância de olhos de ressaca com quem se casou, e uma dúvida que o consome: ela o traiu ou não? Machado de Assis entrega a narração a um homem ciumento e deixa o leitor decidir em quem acreditar. Irônico, curto e genial, é leitura essencial para conhecer o melhor da literatura brasileira.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="dom-casmurro">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/o-morro-dos-ventos-uivantes.jpg" alt="Capa do livro O Morro dos Ventos Uivantes, de Emily Brontë" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>O Morro dos Ventos Uivantes</h3>
+              <p class="livro__autor">Emily Brontë</p>
+              <p class="nota" role="img" aria-label="Nota 4 de 5">◆◆◆◆◇</p>
+              <p class="livro__resenha capitular">Nas charnecas do norte da Inglaterra, o órfão Heathcliff é adotado pela família Earnshaw e cresce ligado a Catherine por um amor feroz. Quando ela escolhe outro caminho, a paixão se transforma numa vingança que atravessa gerações. Emily Brontë escreveu uma história selvagem, longe dos romances bem-comportados da época. Não espere heróis simpáticos: espere emoção crua e uma paisagem que parece viva. Para quem gosta de clássicos sombrios.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="o-morro-dos-ventos-uivantes">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/frankenstein.jpg" alt="Capa do livro Frankenstein, de Mary Shelley" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>Frankenstein</h3>
+              <p class="livro__autor">Mary Shelley</p>
+              <p class="nota" role="img" aria-label="Nota 5 de 5">◆◆◆◆◆</p>
+              <p class="livro__resenha capitular">O jovem cientista Victor Frankenstein descobre como dar vida à matéria morta e cria um ser, mas foge horrorizado do resultado. Abandonada, a criatura aprende sozinha sobre o mundo e sobre a crueldade humana, e passa a cobrar respostas do criador. Escrito por Mary Shelley aos dezenove anos, o livro inaugurou a ficção científica e ainda levanta perguntas sobre ciência e responsabilidade. Para quem conhece o monstro do cinema e quer a história verdadeira.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="frankenstein">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/jane-eyre.jpg" alt="Capa do livro Jane Eyre, de Charlotte Brontë" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>Jane Eyre</h3>
+              <p class="livro__autor">Charlotte Brontë</p>
+              <p class="nota" role="img" aria-label="Nota 5 de 5">◆◆◆◆◆</p>
+              <p class="livro__resenha capitular">Órfã, maltratada pela tia e depois por um internato rígido, Jane Eyre cresce com a firmeza de quem nunca teve nada garantido. Adulta, torna-se governanta em Thornfield Hall e se aproxima do sombrio senhor Rochester, enquanto a casa esconde um segredo. Charlotte Brontë criou uma das primeiras heroínas a exigir ser tratada como igual. Romance, mistério e independência se encontram neste clássico, para quem gosta de personagens fortes e atmosferas góticas.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="jane-eyre">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ALA IX — AVENTURA ===== -->
+    <section class="secao ala" id="aventura" aria-labelledby="t-aventura">
+      <div class="container">
+        <div class="ala__cabecalho">
+          <div>
+            <span class="sobretitulo">Ala IX</span>
+            <h2 id="t-aventura">Aventura</h2>
+            <p>Ilhas, mapas, tesouros e viagens sem volta garantida.</p>
+            <div class="ornamento ornamento--esquerda" aria-hidden="true">❦</div>
+          </div>
+          <a class="link-topo" href="#top">↑ Voltar ao topo</a>
+        </div>
+        <div class="estante">
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/a-ilha-do-tesouro.jpg" alt="Capa do livro A Ilha do Tesouro, de Robert Louis Stevenson" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>A Ilha do Tesouro</h3>
+              <p class="livro__autor">Robert Louis Stevenson</p>
+              <p class="nota" role="img" aria-label="Nota 4 de 5">◆◆◆◆◇</p>
+              <p class="livro__resenha capitular">O jovem Jim Hawkins encontra o mapa de um tesouro escondido por um temido pirata e embarca numa viagem rumo a uma ilha distante. A bordo, porém, nem todos são o que parecem, e o cozinheiro de perna de pau, Long John Silver, tem planos próprios. Foi este livro que deu aos piratas o papagaio no ombro e o X no mapa. Uma aventura clássica e cheia de suspense, para leitores jovens e adultos com alma de marinheiro.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="a-ilha-do-tesouro">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/as-cronicas-de-narnia-o-leao-a-feiticeira-e-o-guarda-roupa.jpg" alt="Capa do livro As Crônicas de Nárnia: O Leão, a Feiticeira e o Guarda-Roupa, de C. S. Lewis" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>As Crônicas de Nárnia: O Leão, a Feiticeira e o Guarda-Roupa</h3>
+              <p class="livro__autor">C. S. Lewis</p>
+              <p class="nota" role="img" aria-label="Nota 5 de 5">◆◆◆◆◆</p>
+              <p class="livro__resenha capitular">Durante a guerra, quatro irmãos são mandados para a casa de um velho professor no interior da Inglaterra. Ao se esconder num guarda-roupa, a caçula Lúcia encontra uma floresta coberta de neve: Nárnia, um mundo mágico onde é sempre inverno e nunca Natal. Com animais falantes, uma feiticeira cruel e o grande leão Aslam, C. S. Lewis criou uma fábula sobre coragem e perdão. Ideal para ler em voz alta e despertar o gosto pela fantasia.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="as-cronicas-de-narnia-o-leao-a-feiticeira-e-o-guarda-roupa">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/o-hobbit.jpg" alt="Capa do livro O Hobbit, de J. R. R. Tolkien" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>O Hobbit</h3>
+              <p class="livro__autor">J. R. R. Tolkien</p>
+              <p class="nota" role="img" aria-label="Nota 5 de 5">◆◆◆◆◆</p>
+              <p class="livro__resenha capitular">Bilbo Bolseiro só quer paz, chá e sua toca confortável, até que o mago Gandalf e treze anões batem à sua porta. Eles partem para recuperar um tesouro guardado pelo dragão Smaug, e o hobbit descobre uma coragem que nem sabia ter. Antes de O Senhor dos Anéis, Tolkien escreveu esta aventura leve, cheia de humor, enigmas e canções. Uma ótima porta de entrada para a Terra-média, indicada para leitores de todas as idades.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="o-hobbit">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/robinson-crusoe.jpg" alt="Capa do livro Robinson Crusoé, de Daniel Defoe" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>Robinson Crusoé</h3>
+              <p class="livro__autor">Daniel Defoe</p>
+              <p class="nota" role="img" aria-label="Nota 4 de 5">◆◆◆◆◇</p>
+              <p class="livro__resenha capitular">Depois de um naufrágio, Robinson Crusoé vai parar sozinho numa ilha deserta e precisa reaprender a viver: construir abrigo, plantar, caçar e controlar o medo. Os anos passam, e a solidão só é quebrada pela chegada de Sexta-Feira. Publicado em 1719, é considerado um dos primeiros romances da língua inglesa e inspirou incontáveis histórias de sobrevivência. Para quem gosta de narrativas de engenhosidade e de imaginar como seria recomeçar do zero.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="robinson-crusoe">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ALA X — LITERATURA BRASILEIRA ===== -->
+    <section class="secao ala" id="brasileira" aria-labelledby="t-brasileira">
+      <div class="container">
+        <div class="ala__cabecalho">
+          <div>
+            <span class="sobretitulo">Ala X</span>
+            <h2 id="t-brasileira">Literatura Brasileira</h2>
+            <p>Vozes do nosso país, do sertão às cidades.</p>
+            <div class="ornamento ornamento--esquerda" aria-hidden="true">❦</div>
+          </div>
+          <a class="link-topo" href="#top">↑ Voltar ao topo</a>
+        </div>
+        <div class="estante">
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/torto-arado.jpg" alt="Capa do livro Torto Arado, de Itamar Vieira Junior" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>Torto Arado</h3>
+              <p class="livro__autor">Itamar Vieira Junior</p>
+              <p class="nota" role="img" aria-label="Nota 5 de 5">◆◆◆◆◆</p>
+              <p class="livro__resenha capitular">No sertão da Bahia, as irmãs Bibiana e Belonísia vivem numa fazenda onde as famílias trabalham a terra sem jamais serem donas dela. Ainda crianças, um acidente com uma faca antiga muda a vida das duas para sempre. Itamar Vieira Junior escreve com uma beleza rara sobre herança, fé, desigualdade e a força das mulheres. Um dos romances brasileiros mais importantes das últimas décadas, para quem quer conhecer o Brasil profundo pela literatura.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="torto-arado">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/a-hora-da-estrela.jpg" alt="Capa do livro A Hora da Estrela, de Clarice Lispector" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>A Hora da Estrela</h3>
+              <p class="livro__autor">Clarice Lispector</p>
+              <p class="nota" role="img" aria-label="Nota 5 de 5">◆◆◆◆◆</p>
+              <p class="livro__resenha capitular">Macabéa é uma jovem alagoana que vive no Rio de Janeiro: datilógrafa, pobre e quase invisível para o mundo. Um narrador inquieto, Rodrigo S. M., tenta contar a vida dela e acaba falando também de si e do ato de escrever. Último livro publicado por Clarice Lispector em vida, é curto, estranho e comovente. Pede uma leitura atenta, mas recompensa com perguntas que não saem da cabeça. Para quem quer começar a ler Clarice.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="a-hora-da-estrela">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/capitaes-da-areia.jpg" alt="Capa do livro Capitães da Areia, de Jorge Amado" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>Capitães da Areia</h3>
+              <p class="livro__autor">Jorge Amado</p>
+              <p class="nota" role="img" aria-label="Nota 5 de 5">◆◆◆◆◆</p>
+              <p class="livro__resenha capitular">Nas ruas de Salvador, um bando de meninos abandonados vive num trapiche e sobrevive de pequenos furtos. Liderados por Pedro Bala, eles têm medo, coragem e sonhos de criança, apesar da vida dura que levam. Jorge Amado olha para esses garotos com carinho e denuncia a violência e o descaso que os cercam. Publicado em 1937, chegou a ter exemplares queimados em praça pública. Para quem quer uma leitura emocionante e cheia de Bahia.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="capitaes-da-areia">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+          <article class="livro">
+            <div class="livro__prateleira"><img class="capa" src="img/capas/o-cortico.jpg" alt="Capa do livro O Cortiço, de Aluísio Azevedo" width="200" height="300" loading="lazy"></div>
+            <div class="livro__info">
+              <h3>O Cortiço</h3>
+              <p class="livro__autor">Aluísio Azevedo</p>
+              <p class="nota" role="img" aria-label="Nota 4 de 5">◆◆◆◆◇</p>
+              <p class="livro__resenha capitular">No Rio de Janeiro do século XIX, o ambicioso João Romão constrói um cortiço e enriquece explorando quem mora nele. O livro acompanha a vida coletiva desse lugar, com brigas, paixões, festas e tragédias, como se o próprio cortiço fosse um personagem. Principal romance naturalista brasileiro, mostra como o ambiente molda as pessoas. É um retrato forte de uma época e uma ótima leitura para vestibulandos e curiosos pela história do Brasil.</p>
+              <a class="link-resenha" href="#deixe-sua-resenha" data-livro="o-cortico">✎ Escrever minha resenha</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RESENHAS DOS LEITORES ===== -->
+    <section class="secao secao--alt" id="deixe-sua-resenha" aria-labelledby="t-resenha">
+      <div class="container">
+        <header class="cabecalho-secao">
+          <div class="ornamento" aria-hidden="true">❦</div>
+          <span class="sobretitulo">A voz dos leitores</span>
+          <h2 id="t-resenha">Deixe a sua resenha</h2>
+          <p>Leu algum livro do acervo? Conte o que achou. A sua opinião ajuda o próximo leitor a escolher.</p>
+        </header>
+
+        <div class="resenhas-leitores">
+          <form class="card form-resenha formulario" id="form-resenha">
+            <h3>Sua resenha</h3>
+            <div class="campo">
+              <label for="resenha-livro">Livro *</label>
+              <select id="resenha-livro" name="livro" required>
+                <option value="">Escolha um dos 40 livros do acervo</option>
+                <optgroup label="Romance">
+                  <option value="e-assim-que-acaba">É Assim que Acaba</option>
+                  <option value="a-hipotese-do-amor">A Hipótese do Amor</option>
+                  <option value="como-eu-era-antes-de-voce">Como Eu Era Antes de Você</option>
+                  <option value="orgulho-e-preconceito">Orgulho e Preconceito</option>
+                </optgroup>
+                <optgroup label="Fantasia">
+                  <option value="eragon">Eragon</option>
+                  <option value="harry-potter-e-a-pedra-filosofal">Harry Potter e a Pedra Filosofal</option>
+                  <option value="a-rainha-vermelha">A Rainha Vermelha</option>
+                  <option value="o-nome-do-vento">O Nome do Vento</option>
+                </optgroup>
+                <optgroup label="Suspense e Mistério">
+                  <option value="a-paciente-silenciosa">A Paciente Silenciosa</option>
+                  <option value="verity">Verity</option>
+                  <option value="e-nao-sobrou-nenhum">E Não Sobrou Nenhum</option>
+                  <option value="o-homem-de-giz">O Homem de Giz</option>
+                </optgroup>
+                <optgroup label="Terror">
+                  <option value="it-a-coisa">It: A Coisa</option>
+                  <option value="o-iluminado">O Iluminado</option>
+                  <option value="a-assombracao-da-casa-da-colina">A Assombração da Casa da Colina</option>
+                  <option value="o-exorcista">O Exorcista</option>
+                </optgroup>
+                <optgroup label="Drama">
+                  <option value="a-menina-que-roubava-livros">A Menina que Roubava Livros</option>
+                  <option value="extraordinario">Extraordinário</option>
+                  <option value="a-culpa-e-das-estrelas">A Culpa é das Estrelas</option>
+                  <option value="o-pequeno-principe">O Pequeno Príncipe</option>
+                </optgroup>
+                <optgroup label="Ficção Científica e Distopia">
+                  <option value="jogos-vorazes">Jogos Vorazes</option>
+                  <option value="1984">1984</option>
+                  <option value="fahrenheit-451">Fahrenheit 451</option>
+                  <option value="divergente">Divergente</option>
+                </optgroup>
+                <optgroup label="Romance de Fantasia">
+                  <option value="quarta-asa">Quarta Asa</option>
+                  <option value="corte-de-espinhos-e-rosas">Corte de Espinhos e Rosas</option>
+                  <option value="o-principe-cruel">O Príncipe Cruel</option>
+                  <option value="a-serpente-e-as-asas-feitas-de-noite">A Serpente e as Asas Feitas de Noite</option>
+                </optgroup>
+                <optgroup label="Literatura Clássica">
+                  <option value="dom-casmurro">Dom Casmurro</option>
+                  <option value="o-morro-dos-ventos-uivantes">O Morro dos Ventos Uivantes</option>
+                  <option value="frankenstein">Frankenstein</option>
+                  <option value="jane-eyre">Jane Eyre</option>
+                </optgroup>
+                <optgroup label="Aventura">
+                  <option value="a-ilha-do-tesouro">A Ilha do Tesouro</option>
+                  <option value="as-cronicas-de-narnia-o-leao-a-feiticeira-e-o-guarda-roupa">As Crônicas de Nárnia: O Leão, a Feiticeira e o Guarda-Roupa</option>
+                  <option value="o-hobbit">O Hobbit</option>
+                  <option value="robinson-crusoe">Robinson Crusoé</option>
+                </optgroup>
+                <optgroup label="Literatura Brasileira">
+                  <option value="torto-arado">Torto Arado</option>
+                  <option value="a-hora-da-estrela">A Hora da Estrela</option>
+                  <option value="capitaes-da-areia">Capitães da Areia</option>
+                  <option value="o-cortico">O Cortiço</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="resenha-nome">Seu nome *</label>
+              <input type="text" id="resenha-nome" name="nome" maxlength="40" autocomplete="name" placeholder="Como quer assinar?" required>
+            </div>
+            <fieldset class="campo estrelas">
+              <legend>Sua nota *</legend>
+              <div class="estrelas__opcoes">
+                <input type="radio" id="nota-5" name="nota" value="5" required><label for="nota-5" title="5 de 5">◆<span class="visualmente-oculto">5 de 5</span></label>
+                <input type="radio" id="nota-4" name="nota" value="4"><label for="nota-4" title="4 de 5">◆<span class="visualmente-oculto">4 de 5</span></label>
+                <input type="radio" id="nota-3" name="nota" value="3"><label for="nota-3" title="3 de 5">◆<span class="visualmente-oculto">3 de 5</span></label>
+                <input type="radio" id="nota-2" name="nota" value="2"><label for="nota-2" title="2 de 5">◆<span class="visualmente-oculto">2 de 5</span></label>
+                <input type="radio" id="nota-1" name="nota" value="1"><label for="nota-1" title="1 de 5">◆<span class="visualmente-oculto">1 de 5</span></label>
+              </div>
+            </fieldset>
+            <div class="campo">
+              <label for="resenha-texto">Resenha *</label>
+              <textarea id="resenha-texto" name="texto" minlength="30" maxlength="600" placeholder="O que você sentiu ao ler? Para quem você indicaria?" aria-describedby="resenha-ajuda" required></textarea>
+              <span class="ajuda" id="resenha-ajuda">Sem spoilers, por favor. Entre 30 e 600 caracteres.</span>
+            </div>
+            <button class="btn" type="submit">Pendurar na estante</button>
+            <p class="aviso-sucesso" id="aviso-resenha" role="status" hidden></p>
+          </form>
+
+          <div class="mural" aria-labelledby="t-mural">
+            <div class="mural__topo">
+              <h3 id="t-mural">Mural dos leitores</h3>
+              <label class="visualmente-oculto" for="filtro-mural">Filtrar resenhas por livro</label>
+              <select id="filtro-mural">
+                <option value="">Todos os livros</option>
+              </select>
+            </div>
+            <div class="mural__vazio" id="mural-vazio">
+              <div class="ornamento" aria-hidden="true">❦</div>
+              <h4>O mural ainda está em branco</h4>
+              <p>As resenhas enviadas aparecem aqui, assinadas por quem escreveu. Que tal ser a primeira pessoa?</p>
+            </div>
+            <div class="mural__lista" id="mural-lista" aria-live="polite"></div>
+            <p class="mural__nota">Este é um site estático: as resenhas ficam guardadas no navegador de quem as escreveu.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <a class="voltar-topo-fixo" href="#top" aria-label="Voltar ao topo da página">↑</a>
+  </main>
+
+  <!-- ===== FOOTER (idêntico em todas as páginas) ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-colunas">
+        <div class="footer-marca">
+          <a class="logo" href="index.html"><img src="img/ui/marca-pagina.svg" alt="" width="20" height="28">Marca-Página</a>
+          <p>Uma biblioteca antiga para leitores do mundo novo. O lugar onde você para, e sempre volta.</p>
+        </div>
+        <nav class="footer-links" aria-label="Links rápidos">
+          <h2>Navegue</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="generos.html">Gêneros</a></li>
+            <li><a href="livros.html">Livros</a></li>
+            <li><a href="clube.html">Clube do Leitor</a></li>
+            <li><a href="contatos.html">Contatos</a></li>
+          </ul>
+        </nav>
+        <div class="footer-clube">
+          <h2>Próximo encontro</h2>
+          <p>Sábado, 12 de dezembro de 2026, às 19h: <a href="clube.html">A Menina que Roubava Livros</a>.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-base">
+      <div class="container">
+        <p>© 2026 Marca-Página — Projeto acadêmico</p>
+        <p class="footer-academico">Universidade Vila Velha · Análise e Desenvolvimento de Sistemas<br>Ludmilla Gozzer dos Santos e Danillo Martins Peruch</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
